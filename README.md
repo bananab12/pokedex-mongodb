@@ -1,67 +1,73 @@
-# Instalaciones recomendadas - Curso de Nest.js
-
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
-- [Visual Studio Code](https://code.visualstudio.com/)
+[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
+[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-- [Postman](https://www.postman.com/downloads/)
+  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+    <p align="center">
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
+<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
+<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
+<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
+<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
+<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
+  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
+    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
+  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
+</p>
+  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
+  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-Opcional
+## Description
 
-- [Table Plus](https://tableplus.com/)
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-- [Git](https://git-scm.com/)
+## Installation
 
-```
-git config --global user.name "Tu nombre"
-git config --global user.email "Tu correo"
-```
-
-- [Node](https://nodejs.org/es/)
-
-```opcional - Yarn
-npm install --global yarn
-```
-
-- [Docker Desktop](https://www.docker.com/get-started)
-
-Descargar imagen de Mongo 5.0.0 y postgres 14
-
-```
-docker pull mongo:7.0.2-jammy
-docker pull postgres:14.9-alpine3.18
-```
-
-## Extensiones de VSCode
-
-[Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar)
-
-### Tema que estoy usando en VSCode:
-
-- [Tokyo Night](https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night)
-
-- [Iconos](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-
-Cambiar íconos de Angular por íconos de Nest -> Abrir: settings.json
-
-```
-"material-icon-theme.activeIconPack": "nest",
+```bash
+$ yarn install
 ```
 
-### Instalaciones adicionales
+## Running the app
 
-- [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
+```bash
+# development
+$ yarn run start
 
-- [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+# watch mode
+$ yarn run start:dev
 
-- [TypeScript importer](https://marketplace.visualstudio.com/items?itemName=pmneo.tsimporter)
+# production mode
+$ yarn run start:prod
+```
 
-- [.env](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
+## Test
 
-- [Better Dockerfile](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.better-dockerfile-syntax)
+```bash
+# unit tests
+$ yarn run test
 
-# Wallpapers que uso
+# e2e tests
+$ yarn run test:e2e
 
-[Wallpapers Developer](https://drive.google.com/drive/folders/1ItU8rbSGJjnh2USOBGwaCo9nYKifPJ6m?usp=sharing)
+# test coverage
+$ yarn run test:cov
+```
+
+## Support
+
+Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+
+## Stay in touch
+
+- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Website - [https://nestjs.com](https://nestjs.com/)
+- Twitter - [@nestframework](https://twitter.com/nestframework)
+
+## License
+
+Nest is [MIT licensed](LICENSE).
