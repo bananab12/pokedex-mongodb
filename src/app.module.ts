@@ -1,4 +1,4 @@
-import { join } from 'path';
+import { join } from 'path'; // en Node
 import { Module } from '@nestjs/common';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { MongooseModule } from '@nestjs/mongoose';
@@ -9,17 +9,13 @@ import { SeedModule } from './seed/seed.module';
 
 @Module({
   imports: [
-    // servir el index.html que esta en el folder public
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'public'),
     }),
-    // Referencia a la base de datos
     MongooseModule.forRoot('mongodb://localhost:27017/nest-pokemon'),
     PokemonModule,
     CommonModule,
     SeedModule,
   ],
-  controllers: [],
-  providers: [],
 })
 export class AppModule {}

@@ -2,15 +2,16 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 
-import { PokeResponse } from './interfaces/poke-response.interface';
 import { Pokemon } from 'src/pokemon/entities/pokemon.entity';
-import { AxiosAdapter } from 'src/common/adapter/axios.adapter';
+import { PokeResponse } from './interfaces/poke-response.interface';
+import { AxiosAdapter } from 'src/common/adapters/axios.adapter';
 
 @Injectable()
 export class SeedService {
   constructor(
     @InjectModel(Pokemon.name)
     private readonly pokemonModel: Model<Pokemon>,
+
     private readonly http: AxiosAdapter,
   ) {}
 
@@ -27,6 +28,7 @@ export class SeedService {
       const segments = url.split('/');
       const no = +segments[segments.length - 2];
 
+      // const pokemon = await this.pokemonModel.create({ name, no });
       pokemonToInsert.push({ name, no }); // [{ name: bulbasaur, no: 1 }]
     });
 
