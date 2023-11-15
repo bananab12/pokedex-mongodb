@@ -5,7 +5,7 @@ import { ConfigService } from '@nestjs/config';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
-  const logger = new Logger('Main (main.ts)');
+  const logger = new Logger('Main - Pokedex App (main.ts)');
 
   const app = await NestFactory.create(AppModule);
 
